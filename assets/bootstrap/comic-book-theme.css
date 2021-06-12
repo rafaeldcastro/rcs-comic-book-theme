@@ -121,8 +121,8 @@ h6.cb__header {
 }
 
 .cb__button.dropdown-toggle:after {
-  right: 0;
-  top: -1px;
+  right: 8px;
+  top: 12px;
 }
 
 .cb__button.btn-lg {
@@ -136,7 +136,7 @@ h6.cb__header {
 
 .cb__button.btn-sm {
   font-size: 0.8rem;
-  padding: 0.8em 0.8em;
+  padding: 0.9em 0.8em 0.8em;
 }
 .cb__button.btn-sm:active,
 .cb__button.btn-sm:focus{
@@ -469,13 +469,20 @@ input.cb__form-control+.cb__form-control {
   font-weight: 600;
 }
 
+.cb__nav-tabs .dropdown-toggle{
+  padding-left: .9rem;
+  padding-right: 2.6rem;
+}
 .cb__nav-tabs .dropdown-toggle:after{
-  top: 0;
+  right: 13px !important;
+  top: 8px !important;
 }
 
 /*====================== DROPDOWNS*/
 .dropdown-menu {
+  background: var(--bs-white);
   border: var(--border-black);
+  border-radius: 0;
   padding: 0;
 }
 
@@ -495,7 +502,7 @@ input.cb__form-control+.cb__form-control {
 }
 
 .dropdown-toggle{
-  padding-right: 1.4em;
+  
 }
 
 .dropdown-toggle:after{
@@ -503,9 +510,9 @@ input.cb__form-control+.cb__form-control {
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
-  position: relative;
-  right: -4px;
-  top: -3px;
+  position: absolute;
+  right: 3px;
+  top: 0;
   transform: rotate(45deg);
 }
 
@@ -534,6 +541,15 @@ input.cb__form-control+.cb__form-control {
   transition: none;
   user-select: none;
   vertical-align: middle;
+}
+
+.cb__nav-pills .dropdown-toggle{
+  padding-left: .9rem;
+  padding-right: 2.6rem;
+}
+.cb__nav-pills .dropdown-toggle:after{
+  right: 11px !important;
+  top: 6px !important;
 }
 
 .cb__nav-pills .nav-link-warning,
